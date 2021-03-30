@@ -1,0 +1,88 @@
+// Помощники
+@import 'mixins/mixins';//миксины scss
+@import 'main/stylesheet';// шрифты
+@import 'main/parameters';// переменные
+
+//Общее
+@import 'main/reset'; // сброс стилей для кроссбраузерности
+@import 'main/common'; // общие стили
+@import 'main/grid'; // базовая 12ти колоночная сетка для сайта(сделана на основе bootstrap), классы .container/.row/.col-md-6 и т.д.
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Open Sans';
+    font-weight: 500;
+    font-style: normal;
+
+}
+.head{
+    background-color: #131521;
+}
+.header{
+   justify-content: space-between;
+   align-items: center;
+   background-color: #131521;
+   padding: 20px 0;
+    
+}
+.header__top {
+    display: flex;
+    background-color: #131521;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.nav__item {
+    display: inline-block;
+    margin: 0 30px 0 0;
+}
+
+.nav__item:last-child {
+    margin: 0;
+}
+
+.nav__link {
+    color:  #9398B2;
+    ;
+}
+.container{
+    background-color:#131521;
+}
+.main{
+    background-color:#131521 ;
+}
+.nav{
+    margin: 0 auto;
+    
+}
+.header__logo{
+    margin: 0 auto;
+}
+.nav__list{
+    align-items: center;
+}
+
+.wrapper{
+display:flex;
+background-image: url("../imgs/1.png");
+background-size: cover;
+height: 100vh;
+}
+.main{
+    background-image: url("../imgs/1.png");
+    background-size:cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    
+}
+.main__img{
+    display: inline-block;
+
+}
